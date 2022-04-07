@@ -44,7 +44,7 @@ public:
 	// in some cases, when singletons depend on each other, you have
 	// to close them in a specific order, This is why we have this close
 	// method
-	inline static void close() {
+	inline static void end() {
 		instance_.reset();
 	}
 

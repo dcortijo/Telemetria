@@ -27,26 +27,26 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -139,20 +139,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="FilePersistence.h" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="JSONSerializer.h" />
     <ClInclude Include="EventData.h" />
     <ClInclude Include="IPersistence.h" />
     <ClInclude Include="ISerializer.h" />
     <ClInclude Include="ITrackerAsset.h" />
-    <ClInclude Include="jute.h" />
+    <ClInclude Include="SessionEnd.h" />
+    <ClInclude Include="SessionStart.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="Tracker.h" />
     <ClInclude Include="TrackerEvent.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FilePersistence.cpp" />
     <ClCompile Include="JSONSerializer.cpp" />
-    <ClCompile Include="jute.cpp" />
+    <ClCompile Include="SessionEnd.cpp" />
+    <ClCompile Include="SessionStart.cpp" />
+    <ClCompile Include="Tracker.cpp" />
+    <ClCompile Include="TrackerEvent.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

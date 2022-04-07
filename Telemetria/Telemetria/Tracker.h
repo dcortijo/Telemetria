@@ -10,5 +10,6 @@ class Tracker: public Singleton<Tracker>
 	friend Singleton<Tracker>;
 private:
 	IPersistence* persistenceObject;
-	std::list<ITrackerAsset*> activeTrackers;
+public:
+	void trackEvent(TrackerEvent* event);
 };

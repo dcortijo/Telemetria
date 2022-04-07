@@ -1,5 +1,6 @@
 #pragma once
 #include "ISerializer.h"
+#include <queue>
 
 class IPersistence
 {
@@ -8,6 +9,11 @@ protected:
 	/// Serializador de eventos
 	/// </summary>
 	ISerializer* serializer;
+	
+	/// <summary>
+	/// Cola de eventos
+	/// </summary>
+	std::queue<TrackerEvent*> eventQueue;
 public:
 	IPersistence() = delete;
 	IPersistence(const IPersistence&) = delete;
@@ -18,7 +24,7 @@ public:
 	/// <summary>
 	/// Envia el evento a la cola de eventos 
 	/// </summary>
-	virtual void Send(TrackerEvent event) = 0;
+	virtual void Send(TrackerEvent* event) = 0;
 	/// <summary>
 	/// Vuelca los eventos tras serializarlos en "la persistencia" 
 	/// </summary>
