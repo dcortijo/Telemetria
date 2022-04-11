@@ -31,7 +31,8 @@ enum Attacks {
 	AirHeavyPunch,
 	AirNormalKick,
 	AirHeavyKick,
-	GuardBreaker
+	GuardBreaker,
+	NoAttack
 };
 
 enum Abilities {
@@ -56,5 +57,6 @@ enum Abilities {
 	NadoKick,
 	//------level 5------//
 	MegatonGrip,
-	SeismicShock
+	SeismicShock,
+	NoAbility
 };

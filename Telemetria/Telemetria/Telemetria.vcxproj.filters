@@ -54,6 +54,12 @@
     <ClInclude Include="RoundStart.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="RoundEnd.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceiveHit.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JSONSerializer.cpp">
@@ -75,6 +81,12 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="RoundStart.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundEnd.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReceiveHit.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
