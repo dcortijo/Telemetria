@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AbilityEvent.h" />
+    <ClInclude Include="AttackEvent.h" />
     <ClInclude Include="FilePersistence.h" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="JSONSerializer.h" />
@@ -154,6 +156,8 @@
     <ClInclude Include="TrackerEvent.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbilityEvent.cpp" />
+    <ClCompile Include="AttackEvent.cpp" />
     <ClCompile Include="FilePersistence.cpp" />
     <ClCompile Include="JSONSerializer.cpp" />
     <ClCompile Include="RoundStart.cpp" />
