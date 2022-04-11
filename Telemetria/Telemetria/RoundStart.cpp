@@ -13,7 +13,7 @@ std::string RoundStart::toJSON() const
 
 	char buffer[1000];
 	std::snprintf(buffer, 1000,
-		"\"Character 1\": $d\n\"Abilities 1-1\": $d\n\"Abilities 1-2\": $d\n\"Character 2\": $d\n\"Abilities 2-1\": $d\n\"Abilities 2-2\": $d\n",
+		"\"Character 1\": $d \"Abilities 1-1\": $d \"Abilities 1-2\": $d \"Character 2\": $d \"Abilities 2-1\": $d \"Abilities 2-2\": $d ",
 		_characters[0], _abilities[0][0], _abilities[0][1], _characters[1], _abilities[1][0], _abilities[1][1]);
 	std::string specific(buffer);
 
