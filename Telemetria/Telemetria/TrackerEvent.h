@@ -5,11 +5,11 @@
 class TrackerEvent
 {
 protected:
-	TrackerEvent(EventType type_, time_t timestamp_, int sessionID_, int playerID_);
+	TrackerEvent(EventType type_, time_t timestamp_, int sessionID_);
 	EventType _type;
 	time_t _timestamp;
 	int _sessionID;
-	int _playerID;
 public:
 	virtual std::string toJSON() const;
+	std::string baseInfo() const;
 };

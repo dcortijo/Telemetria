@@ -3,6 +3,6 @@
 class SessionEnd :  public TrackerEvent
 {
 public:
-	SessionEnd(time_t timestamp, int sessionID, int playerID);
+	SessionEnd(time_t timestamp, int sessionID);
 };
 

@@ -146,6 +146,7 @@
     <ClInclude Include="IPersistence.h" />
     <ClInclude Include="ISerializer.h" />
     <ClInclude Include="ITrackerAsset.h" />
+    <ClInclude Include="RoundStart.h" />
     <ClInclude Include="SessionEnd.h" />
     <ClInclude Include="SessionStart.h" />
     <ClInclude Include="Singleton.h" />
@@ -155,6 +156,7 @@
   <ItemGroup>
     <ClCompile Include="FilePersistence.cpp" />
     <ClCompile Include="JSONSerializer.cpp" />
+    <ClCompile Include="RoundStart.cpp" />
     <ClCompile Include="SessionEnd.cpp" />
     <ClCompile Include="SessionStart.cpp" />
     <ClCompile Include="Tracker.cpp" />
