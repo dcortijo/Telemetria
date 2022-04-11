@@ -1,11 +1,11 @@
 #pragma once
 #include "TrackerEvent.h"
 
-class ReceiveHit :
+class ReceiveDamage :
 	public TrackerEvent
 {
 public:
-	ReceiveHit(time_t timestamp, int sessionID, int damage, Characters character, Players player, Attacks attack, Abilities ability);
+	ReceiveDamage(time_t timestamp, int sessionID, int damage, Characters character, Players player, Attacks attack, Abilities ability);
 	std::string toJSON() const override;
 private:
 	Characters _character;

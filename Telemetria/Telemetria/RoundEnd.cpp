@@ -1,7 +1,7 @@
 #include "RoundEnd.h"
 
 RoundEnd::RoundEnd(time_t timestamp, int sessionID, Characters characters[NUM_PLAYERS], Characters winner) :
-	TrackerEvent(EventType::RoundStart, timestamp, sessionID), _winner(winner)
+	TrackerEvent(EventType::RoundEnd, timestamp, sessionID), _winner(winner)
 {
 	memcpy(_characters, characters, sizeof(Characters) * NUM_PLAYERS);
 }
