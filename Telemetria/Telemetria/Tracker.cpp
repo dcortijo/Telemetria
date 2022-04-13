@@ -1,6 +1,11 @@
 #include "Tracker.h"
 #include "FilePersistence.h"
 
+Tracker::~Tracker() 
+{
+	delete persistenceObject;
+}
+
 void Tracker::init() 
 {
 	persistenceObject = new FilePersistence();

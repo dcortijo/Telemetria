@@ -3,6 +3,7 @@
 
 class FilePersistence : public IPersistence
 {
+	~FilePersistence();
 	// Inherited via IPersistence
 	virtual void init() override;
 	virtual void send(TrackerEvent* event) override;

@@ -3,6 +3,11 @@
 #include "JSONSerializer.h"
 #include <iostream>
 
+FilePersistence::~FilePersistence()
+{
+	delete serializer;
+}
+
 void FilePersistence::init()
 {
 	serializer = new JSONSerializer();

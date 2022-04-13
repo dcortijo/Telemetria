@@ -15,6 +15,7 @@ protected:
 	/// </summary>
 	std::queue<TrackerEvent*> eventQueue;
 public:
+	virtual ~IPersistence() {}
 	/// <summary>
 	/// Inicializa el serializador
 	/// </summary>
