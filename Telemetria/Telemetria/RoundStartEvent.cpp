@@ -1,7 +1,7 @@
 #include "RoundStartEvent.h"
 
-RoundStartEvent::RoundStartEvent(time_t timestamp, int sessionID, Characters characters[NUM_PLAYERS], Abilities abilities[NUM_PLAYERS][NUM_ABILITIES]) :
-	TrackerEvent(EventType::RoundStart, timestamp, sessionID)
+RoundStartEvent::RoundStartEvent(time_t timestamp, Characters characters[NUM_PLAYERS], Abilities abilities[NUM_PLAYERS][NUM_ABILITIES]) :
+	TrackerEvent(EventType::RoundStart, timestamp)
 {
 	memcpy(_characters, characters, sizeof(Characters) * NUM_PLAYERS);
 	memcpy(_abilities, abilities, sizeof(Abilities) * NUM_PLAYERS * NUM_ABILITIES);

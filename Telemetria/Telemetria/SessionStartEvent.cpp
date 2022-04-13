@@ -1,7 +1,7 @@
 #include "SessionStartEvent.h"
-
-SessionStartEvent::SessionStartEvent(time_t timestamp, int sessionID):
-	TrackerEvent( EventType::SessionStart,  timestamp,  sessionID)
+#include "Tracker.h"
+SessionStartEvent::SessionStartEvent(time_t timestamp):
+	TrackerEvent( EventType::SessionStart,  timestamp)
 {
 }
 

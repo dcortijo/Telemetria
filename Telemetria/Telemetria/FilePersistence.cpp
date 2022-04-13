@@ -23,7 +23,7 @@ void FilePersistence::flush()
 	while (!eventQueue.empty()) {
 		TrackerEvent* even = eventQueue.front();
 		std::string serialized = serializer->serialize(*even);
-		// Escribir aqui en archivo
+		//TODO Escribir aqui en archivo
 		std::cout << serialized << std::endl;
 		eventQueue.pop();
 		delete even;

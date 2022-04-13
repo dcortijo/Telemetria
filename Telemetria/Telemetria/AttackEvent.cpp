@@ -1,7 +1,7 @@
 #include "AttackEvent.h"
 
-AttackEvent::AttackEvent(time_t timestamp, int sessionID, Characters character, Attacks attack, Players playerId) :
-	TrackerEvent(EventType::Attack, timestamp, sessionID), _character(character), _attack(attack), _playerID(playerId)
+AttackEvent::AttackEvent(time_t timestamp, Characters character, Attacks attack, Players playerId) :
+	TrackerEvent(EventType::Attack, timestamp), _character(character), _attack(attack), _playerID(playerId)
 {
 }
 

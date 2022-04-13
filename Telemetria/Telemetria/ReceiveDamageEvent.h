@@ -5,7 +5,7 @@ class ReceiveDamageEvent :
 	public TrackerEvent
 {
 public:
-	ReceiveDamageEvent(time_t timestamp, int sessionID, int damage, Characters character, Players player, Attacks attack, Abilities ability);
+	ReceiveDamageEvent(time_t timestamp, int damage, Characters character, Players player, Attacks attack, Abilities ability);
 	std::string toJSON() const override;
 private:
 	Characters _character;

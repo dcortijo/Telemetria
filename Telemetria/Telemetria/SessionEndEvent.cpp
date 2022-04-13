@@ -1,7 +1,7 @@
 #include "SessionEndEvent.h"
 
-SessionEndEvent::SessionEndEvent(time_t timestamp, int sessionID) :
-	TrackerEvent(EventType::SessionEnd, timestamp, sessionID)
+SessionEndEvent::SessionEndEvent(time_t timestamp) :
+	TrackerEvent(EventType::SessionEnd, timestamp)
 {
 }
 

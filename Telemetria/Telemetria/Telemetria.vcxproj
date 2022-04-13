@@ -96,6 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,6 +111,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +127,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +143,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,6 +157,7 @@
     <ClInclude Include="AbilityEvent.h" />
     <ClInclude Include="AttackEvent.h" />
     <ClInclude Include="FilePersistence.h" />
+    <ClInclude Include="HashGenerator.h" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="JSONSerializer.h" />
     <ClInclude Include="EventData.h" />
@@ -169,6 +177,7 @@
     <ClCompile Include="AbilityEvent.cpp" />
     <ClCompile Include="AttackEvent.cpp" />
     <ClCompile Include="FilePersistence.cpp" />
+    <ClCompile Include="HashGenerator.cpp" />
     <ClCompile Include="JSONSerializer.cpp" />
     <ClCompile Include="ReceiveDamageEvent.cpp" />
     <ClCompile Include="RoundEndEvent.cpp" />

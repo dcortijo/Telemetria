@@ -3,7 +3,7 @@
 class AbilityEvent : public TrackerEvent
 {
 public:
-	AbilityEvent(time_t timestamp, int sessionID, Characters characters, Abilities ability, Players playerId);
+	AbilityEvent(time_t timestamp, Characters characters, Abilities ability, Players playerId);
 	std::string toJSON() const override;
 private:
 	Characters _character;

@@ -1,7 +1,7 @@
 #include "ReceiveDamageEvent.h"
 
-ReceiveDamageEvent::ReceiveDamageEvent(time_t timestamp, int sessionID, int damage, Characters character, Players player, Attacks attack, Abilities ability):
-TrackerEvent(EventType::ReceiveDamage, timestamp, sessionID), _damage(damage), _character(character), _player(player), _attack(attack), _ability(ability)
+ReceiveDamageEvent::ReceiveDamageEvent(time_t timestamp, int damage, Characters character, Players player, Attacks attack, Abilities ability):
+TrackerEvent(EventType::ReceiveDamage, timestamp), _damage(damage), _character(character), _player(player), _attack(attack), _ability(ability)
 {
 }
 

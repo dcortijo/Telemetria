@@ -1,7 +1,7 @@
 #include "AbilityEvent.h"
 
-AbilityEvent::AbilityEvent(time_t timestamp, int sessionID, Characters character, Abilities ability, Players playerId) :
-	TrackerEvent(EventType::Ability, timestamp, sessionID), _character(character), _ability(ability), _playerID(playerId)
+AbilityEvent::AbilityEvent(time_t timestamp, Characters character, Abilities ability, Players playerId) :
+	TrackerEvent(EventType::Ability, timestamp), _character(character), _ability(ability), _playerID(playerId)
 {
 }
 

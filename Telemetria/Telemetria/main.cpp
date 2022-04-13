@@ -7,13 +7,13 @@
 
 int main() {
 	Tracker::instance()->init();
-	TrackerEvent* even = new SessionStartEvent(0, 1);
+	TrackerEvent* even = new SessionStartEvent(0);
 	Tracker::instance()->trackEvent(even);
-	even = new ReceiveDamageEvent(0, 1, 1, Characters::F10R, Players::PLAYER1, Attacks::NoAttack, Abilities::AcidSplit);
+	even = new ReceiveDamageEvent(0, 1,  Characters::F10R, Players::PLAYER1, Attacks::NoAttack, Abilities::AcidSplit);
 	Tracker::instance()->trackEvent(even);
-	even = new AbilityEvent(0, 1, Characters::MKWH00P, Abilities::VampiricStrike, Players::PLAYER2);
+	even = new AbilityEvent(0,  Characters::MKWH00P, Abilities::VampiricStrike, Players::PLAYER2);
 	Tracker::instance()->trackEvent(even);
-	even = new SessionEndEvent(0, 1);;
+	even = new SessionEndEvent(0);
 	Tracker::instance()->trackEvent(even);
 	Tracker::instance()->flushPersistence();
 	return 0;

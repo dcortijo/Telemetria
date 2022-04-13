@@ -4,7 +4,7 @@
 class SessionStartEvent : public TrackerEvent
 {
 public:
-	SessionStartEvent( time_t timestamp, int sessionID);
+	SessionStartEvent( time_t timestamp);
 	std::string toJSON() const override;
 };
 
