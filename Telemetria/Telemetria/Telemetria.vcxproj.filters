@@ -45,19 +45,19 @@
     <ClInclude Include="FilePersistence.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="SessionStart.h">
+    <ClInclude Include="SessionStartEvent.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="SessionEnd.h">
+    <ClInclude Include="SessionEndEvent.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="RoundStart.h">
+    <ClInclude Include="RoundStartEvent.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="RoundEnd.h">
+    <ClInclude Include="RoundEndEvent.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="ReceiveDamage.h">
+    <ClInclude Include="ReceiveDamageEvent.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="AttackEvent.h">
@@ -77,22 +77,22 @@
     <ClCompile Include="Tracker.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="SessionStart.cpp">
+    <ClCompile Include="SessionStartEvent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="SessionEnd.cpp">
+    <ClCompile Include="SessionEndEvent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="TrackerEvent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="RoundStart.cpp">
+    <ClCompile Include="RoundStartEvent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="RoundEnd.cpp">
+    <ClCompile Include="RoundEndEvent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="ReceiveDamage.cpp">
+    <ClCompile Include="ReceiveDamageEvent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="AttackEvent.cpp">

@@ -15,18 +15,16 @@ protected:
 	/// </summary>
 	std::queue<TrackerEvent*> eventQueue;
 public:
-	IPersistence() = delete;
-	IPersistence(const IPersistence&) = delete;
-	IPersistence& operator= (const IPersistence&) = delete;
-	IPersistence(IPersistence&&) = delete;
-	IPersistence& operator= (IPersistence&&) = delete;
-	virtual ~IPersistence() { delete serializer; }
+	/// <summary>
+	/// Inicializa el serializador
+	/// </summary>
+	virtual void init() = 0;
 	/// <summary>
 	/// Envia el evento a la cola de eventos 
 	/// </summary>
-	virtual void Send(TrackerEvent* event) = 0;
+	virtual void send(TrackerEvent* event) = 0;
 	/// <summary>
 	/// Vuelca los eventos tras serializarlos en "la persistencia" 
 	/// </summary>
-	virtual void Flush() = 0;
+	virtual void flush() = 0;
 };

@@ -14,6 +14,6 @@ std::string TrackerEvent::baseInfo() const
 {
 	char buffer[1000];
 	std::snprintf(buffer, 1000,
-		"\"type\": $d \"time\": $d \"session\": $d", _type, _timestamp, _sessionID);
+		"\"type\": %d, \"time\": %d, \"session\": %d", _type, _timestamp, _sessionID);
 	return std::string(buffer);
 }

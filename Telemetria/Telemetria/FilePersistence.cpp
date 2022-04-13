@@ -1,15 +1,26 @@
 #include "FilePersistence.h"
 #include "TrackerEvent.h"
+#include "JSONSerializer.h"
+#include <iostream>
 
-void FilePersistence::Send(TrackerEvent* event)
+void FilePersistence::init()
+{
+	serializer = new JSONSerializer();
+}
+
+void FilePersistence::send(TrackerEvent* event)
 {
 	eventQueue.push(event);
 }
 
-void FilePersistence::Flush()
+void FilePersistence::flush()
 {
 	while (!eventQueue.empty()) {
-		serializer->serialize(*eventQueue.front());
+		TrackerEvent* even = eventQueue.front();
+		std::string serialized = serializer->serialize(*even);
+		// Escribir aqui en archivo
+		std::cout << serialized << std::endl;
 		eventQueue.pop();
+		delete even;
 	}
 }

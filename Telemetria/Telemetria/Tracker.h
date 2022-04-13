@@ -2,7 +2,6 @@
 #include <list>
 
 #include "Singleton.h"
-#include "ITrackerAsset.h"
 #include "IPersistence.h"
 
 class Tracker: public Singleton<Tracker>
@@ -11,5 +10,7 @@ class Tracker: public Singleton<Tracker>
 private:
 	IPersistence* persistenceObject;
 public:
+	void init();
 	void trackEvent(TrackerEvent* event);
+	void flushPersistence();
 };

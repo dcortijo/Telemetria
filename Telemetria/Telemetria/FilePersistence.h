@@ -1,9 +1,11 @@
 #pragma once
 #include "IPersistence.h"
+
 class FilePersistence : public IPersistence
 {
 	// Inherited via IPersistence
-	virtual void Send(TrackerEvent* event) override;
-	virtual void Flush() override;
+	virtual void init() override;
+	virtual void send(TrackerEvent* event) override;
+	virtual void flush() override;
 };
 
