@@ -11,7 +11,6 @@ void Tracker::init()
 	persistenceObject = new FilePersistence();
 	persistenceObject->init();
 
-
 	currSession = generateSessionID();
 }
 

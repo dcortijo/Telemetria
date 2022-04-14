@@ -9,5 +9,5 @@ std::string SessionStartEvent::toJSON() const
 {
 	std::string base = baseInfo();
 
-	return "[ { " + base + " }, ";	// Siempre sera el primer evento
+	return "[\n{ " + base + " }, ";	// Siempre sera el primer evento
 }

@@ -9,5 +9,5 @@ std::string SessionEndEvent::toJSON() const
 {
 	std::string base = baseInfo();
 
-	return "{ " + base + " } ]";	// Siempre sera el ultimo evento
+	return "{ " + base + " } \n]";	// Siempre sera el ultimo evento
 }
