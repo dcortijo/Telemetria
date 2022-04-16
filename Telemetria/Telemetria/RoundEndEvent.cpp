@@ -1,6 +1,6 @@
 #include "RoundEndEvent.h"
 
-RoundEndEvent::RoundEndEvent(time_t timestamp, Characters characters[NUM_PLAYERS], Characters winner) :
+RoundEndEvent::RoundEndEvent(time_t timestamp, Characters characters[NUM_PLAYERS], Players winner) :
 	TrackerEvent(EventType::RoundEnd, timestamp), _winner(winner)
 {
 	memcpy(_characters, characters, sizeof(Characters) * NUM_PLAYERS);

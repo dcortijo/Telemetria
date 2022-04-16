@@ -15,7 +15,7 @@ enum EventType {
 };
 
 enum Players {
-	PLAYER1, PLAYER2
+	PLAYER1, PLAYER2, NONE
 };
 
 enum Characters {
